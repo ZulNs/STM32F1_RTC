@@ -1,0 +1,87 @@
+#######################################
+# Syntax Coloring Map For RTC
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+STM32F1_RTC	KEYWORD1
+stm32f1_rtc	KEYWORD1
+Weekday	KEYWORD1
+MonthIndex	KEYWORD1
+InterruptMode	KEYWORD1
+DateVar	KEYWORD1
+TimeVar	KEYWORD1
+DateTime	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin	KEYWORD2
+init	KEYWORD2
+attachInterrupt	KEYWORD2
+detachInterrupt	KEYWORD2
+setTime	KEYWORD2
+setAlarmTime	KEYWORD2
+getMilliseconds	KEYWORD2
+getBackupRegister	KEYWORD2
+setBackupRegister	KEYWORD2
+epochToDate	KEYWORD2
+epochToTime	KEYWORD2
+epochToDateTime	KEYWORD2
+dateTimeToEpoch	KEYWORD2
+epochToHijriDate	KEYWORD2
+hijriDateTimeToEpoch	KEYWORD2
+isInitialized	KEYWORD2
+isCounterUpdated	KEYWORD2
+isAlarmTriggered	KEYWORD2
+isCounterOverflow	KEYWORD2
+clearSecondFlag	KEYWORD2
+clearAlarmFlag 	KEYWORD2
+clearOverflowFlag	KEYWORD2
+getTime	KEYWORD2
+enableClockInterface	KEYWORD2
+waitSync	KEYWORD2
+enableBackupWrites	KEYWORD2
+disableBackupWrites	KEYWORD2
+
+date	KEYWORD2
+time	KEYWORD2
+numberOfDays	KEYWORD2
+year	KEYWORD2
+month	KEYWORD2
+day	KEYWORD2
+weekday	KEYWORD2
+isLeapYear	KEYWORD2
+hours	KEYWORD2
+minutes	KEYWORD2
+seconds	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+SUNDAY	LITERAL1
+MONDAY	LITERAL1
+TUESDAY	LITERAL1
+WEDNESDAY	LITERAL1
+THURSDAY	LITERAL1
+FRIDAY	LITERAL1
+SATURDAY	LITERAL1
+JANUARY	LITERAL1
+FEBRUARY	LITERAL1
+MARCH	LITERAL1
+APRIL	LITERAL1
+MAY	LITERAL1
+JUNE	LITERAL1
+JULY	LITERAL1
+AUGUST	LITERAL1
+SEPTEMBER	LITERAL1
+OCTOBER	LITERAL1
+NOVEMBER	LITERAL1
+DECEMBER	LITERAL1
+RTC_SECONDS_INTERRUPT	LITERAL1
+RTC_ALARM_INTERRUPT	LITERAL1
+RTC_OVERFLOW_INTERRUPT	LITERAL1

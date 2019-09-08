@@ -1,0 +1,18 @@
+{
+  "name": "STM32F1_RTC",
+  "keywords": "rtc, timing, date, calendar, gregorian, hijri, islamic",
+  "description": "Allows to use the RTC functionalities of STM32F1xx based boards using external low speed oscillator. This library can be used in the STM32 Cores by STMicroelectronics as well as in the libmaple version of Arduino STM32 by Roger Clark development boards. With this library you can use the RTC device to program actions related to date and time. This library offers Islamic Hijri calendar calculations in addition to the Christian (Gregorian) calendar. Day, month, hour, minute and second parameters can be supplied with values that exceed their respective limits or supplied with negative values. Other parameters will be adjusted accordingly.",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/ZulNs/STM32F1_RTC.git"
+  },
+  "frameworks": "arduino",
+  "platforms": "stm32",
+  "authors":
+  {
+    "name": "ZulNs",
+    "url": "https://zulns.github.io",
+    "maintainer": true
+  }
+}
