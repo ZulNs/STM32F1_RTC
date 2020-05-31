@@ -27,7 +27,7 @@
  * Take a look at "circuit_bb.png", "circuit_schem.png", or "circuit.fzz" (open with Fritzing) files.
  * 
  * Created 5 September 2019
- * by Zulns
+ * by ZulNs
  * @Gorontalo, Indonesia
  * 
  * This example code is in the public domain.
