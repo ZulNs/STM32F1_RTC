@@ -190,7 +190,7 @@ public:
   }
   
   inline bool isInitialized() {
-    return BKP_DR[RTC_INIT_REG] & RTC_INIT_FLAG == RTC_INIT_FLAG;
+    return (BKP_DR[RTC_INIT_REG] & RTC_INIT_FLAG) == RTC_INIT_FLAG;
   }
   
   inline bool isCounterUpdated() {
