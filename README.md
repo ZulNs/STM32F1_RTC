@@ -1,6 +1,6 @@
 # STM32F1_RTC API Documentation
 
-[![Library Manager: STM32F1_RTC 1.0.0](https://www.ardu-badge.com/badge/STM32F1_RTC.svg)](https://www.ardu-badge.com/STM32F1_RTC)
+[![Library Manager: STM32F1_RTC 1.1.0](https://www.ardu-badge.com/badge/STM32F1_RTC.svg)](https://www.ardu-badge.com/STM32F1_RTC)
 
 ## Overview
 Allows to use the **RTC** functionalities of **STM32F1xx** based boards using external low speed oscillator (LSE).
