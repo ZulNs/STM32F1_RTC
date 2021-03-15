@@ -84,6 +84,25 @@ void STM32F1_RTC::setTime(uint32_t time) {
   disableBackupWrites();
 }
 
+// The 32-bit RTC counter is spread over 2 registers so it cannot be read
+// atomically. We need to read the high word twice and check if it has rolled
+// over. If it has, then read the low word a second time to get its new, rolled
+// over value. See the RTC_ReadTimeCounter() function in
+// system/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c of the
+// STM32duino Core.
+uint32_t STM32F1_RTC::getTime() {
+  uint16_t high1 = RTC_CNTH;
+  uint16_t low = RTC_CNTL;
+  uint16_t high2 = RTC_CNTH;
+
+  if (high1 != high2) {
+    low = RTC_CNTL;
+    high1 = high2;
+  }
+
+  return (high1 << 16) | low; 
+}
+
 void STM32F1_RTC::setAlarmTime(uint32_t time) {
   enableBackupWrites();
   waitFinished();

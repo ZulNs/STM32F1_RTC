@@ -166,6 +166,7 @@ public:
   void attachInterrupt(InterruptMode im, void (*handler)(void));
   void detachInterrupt(InterruptMode im);
   void setTime(uint32_t time);
+  uint32_t getTime();
   void setAlarmTime(uint32_t time);
   uint16_t getMilliseconds();
   uint16_t getBackupRegister(uint8_t idx);
@@ -190,7 +191,7 @@ public:
   }
   
   inline bool isInitialized() {
-    return BKP_DR[RTC_INIT_REG] & RTC_INIT_FLAG == RTC_INIT_FLAG;
+    return (BKP_DR[RTC_INIT_REG] & RTC_INIT_FLAG) == RTC_INIT_FLAG;
   }
   
   inline bool isCounterUpdated() {
@@ -215,10 +216,6 @@ public:
   
   inline void clearOverflowFlag() {
     RTC_CRL &= ~RTC_CRL_OWF;
-  }
-  
-  inline uint32_t getTime() {
-    return (RTC_CNTH << 16) | RTC_CNTL;
   }
   
   inline void enableClockInterface() {
